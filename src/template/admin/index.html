@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b4c502cfc.js"></script></head> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <!-- header panel -->
+            <div class="header">
+                    <div class="tithead" id="titleheader">
+                                <a href="javascript:void(0);" class="toggle" onclick="toggleSlidebar()"><i class="fas fa-bars"></i></a>  
+                                <span class="title">SHOPLET ADMIN</span>
+                    </div>
+                   
+                    
+                    <span>
+                            <div class="usermenu">
+                                    <a href="">
+                                            <i class="fas fa-bell"></i>
+                                    </a>
+                                    <a href="">
+                                            <i class="fas fa-user-tie"></i>
+                                    </a>
+                            </div>
+                            <div class="search">
+                                        <input type="text" class="search-input">
+                                        <i class="fa fa-search"></i>
+                            </div>
+                    </span>
+                    
+                </div>
+                <div class="menu" id="content">
+                                <div class="sidemenu" id="side">
+        
+                                        <li class="conmenu" id="dashboard">
+                                                <a href="#dashboard" class="btnMenu"><i class="fas fa-home"></i>DASHBOARD</a>
+                                        </li>
+        
+                                        <li class="conmenu" id="product">
+                                                <a href="#product" class="btnMenu"><i class="fas fa-shopping-bag"></i>PRODUCT</a>
+                                                <div class="submenu">
+                                                        <a href="">Product Items</a>
+                                                        <a href="">Review</a>
+                                                        <a href="">Category Line</a>
+                                                        <a href="">Category</a>
+                                                        <a href="">Sub Category</a>
+                                                </div>
+                                        </li>
+                                        
+                                       <li class="conmenu" id="inventory">
+                                                <a href="#inventory" class="btnMenu"><i class="fas fa-warehouse"></i>INVENTORY</a>
+                                        </li>
+        
+                                       <li class="conmenu" id="order">
+                                                <a href="#order" class="btnMenu"><i class="fas fa-cash-register"></i>ORDER</a>
+                                       </li>
+                                        
+                                       <li class="conmenu" id="payment">
+                                                <a href="#payment" class="btnMenu"><i class="fas fa-file-invoice"></i>PAYMENT</a>
+                                       </li>
+        
+                                       <li class="conmenu" id="promotional">
+                                                <a href="#promotional" class="btnMenu"><i class="fas fa-ad"></i>PROMOTIONAL</a>
+                                       </li>
+        
+                                       <li class="conmenu" id="incentives">
+                                                <a href="#incentives" class="btnMenu"><i class="fas fa-user-tag"></i>INCENTIVES</a>
+                                                <div class="submenu">
+                                                                <a href="">Claims</a>
+                                                        </div>
+                                        </li>
+        
+                                       <li class="conmenu" id="users">
+                                                <a href="#users" class="btnMenu"><i class="fas fa-users"></i>USERS</a>
+                                                <div class="submenu">
+                                                        <a href="">Merchant</a>
+                                                        <a href="">Customer</a>                
+                                                </div>
+                                       </li>
+        
+                                       <li class="conmenu" id="reports">
+                                                <a href="#reports" class="btnMenu"><i class="fas fa-file-alt"></i>REPORTS</a>
+                                       </li>
+        
+                                       <li class="conmenu" id="settings">
+                                                <a href="#settings" class="btnMenu"><i class="fas fa-cogs"></i>SETTINGS</a>
+                                                <div class="submenu">
+                                                                <a href="">Logo</a>
+                                                                <a href="">Ads</a>   
+                                                                <a href="">Pages</a>    
+                                                </div>
+                                        </li>       
+                                </div>
+                            </div>
+
+         <div class="bodycontainer">
+             
+
+                <div class="productpanel" id="bodyCon">
+
+                     <div class="categLine">
+                        
+                        <table class="table table-striped ">
+                                        <div class="cateLhead">
+                                                        <h1> <i class="fab fa-buffer"></i> Product Line</h1> 
+                                                        <button class="add"><i class="fas fa-plus-circle"></i> Add</button>
+                                                        <button class="delete"><i class="fas fa-minus-circle"></i> Delete</button>
+                                                 </div>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                        <span class="custom-checkbox">
+                                                                <input type="checkbox" id="selectAll" onclick="checkPage(this)">
+                                                                <label for="selectAll"></label>
+                                                        </span>
+                                                </th>
+                                                <th>Code No.</th>
+                                                <th>Name</th>
+                                                <th>Icon</th>
+                                                <th>DateCreated</th>
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody>        
+                                                <tr id="">
+                                                        <td>
+                                                                <span class="custom-checkbox">
+                                                                        <input type="checkbox" class="user_checkbox" data-user-id="">
+                                                                        <label for="checkbox2"></label>
+                                                                </span>
+                                                        </td>
+                                                                <td>1</td>
+                                                                <td>Electronic</td>
+                                                                <td>haskaskh</td>
+                                                                <td>10:30pm</td>
+                                                </tr>
+                                                <tr id="">
+                                                                <td>
+                                                                        <span class="custom-checkbox">
+                                                                                <input type="checkbox" class="user_checkbox" data-user-id="">
+                                                                                <label for="checkbox2"></label>
+                                                                        </span>
+                                                                </td>
+                                                                        <td>1</td>
+                                                                        <td>Electronic</td>
+                                                                        <td>haskaskh</td>
+                                                                        <td>10:30pm</td>
+                                                        </tr>
+                                        
+                                        </tbody>
+                        </table>
+
+
+
+
+                     </div>
+
+                </div>
+
+                <div class="modal-container-edit">
+                                <div class="modal-edit">
+                                    <span class="close">&times;</span>
+                                    <span class="modal-header"> 
+                                        EDIT
+                                    </span>
+            
+                                    <form action="" method="get">
+                                        <div class="product-info">
+                                            <span>Code No.</span>
+                                            <input type="text" class="product-edit"> <br>
+                                            <span>Product Line Name</span>
+                                            <input type="text" class="product-edit"> <br>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> 
+         </div>
+       
+       
+
+
+       
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
