@@ -1,2 +1,2 @@
 # Shoplet
-E-Commerce - Online Shopping
+E-Commerce - Online Shopping Outlet
